@@ -37,7 +37,6 @@ const UseState = () => {
         </>
        )}
 
-
       <button onClick={handleButton}>Sign {user? "Out" : "In"}</button>
       
     </div>

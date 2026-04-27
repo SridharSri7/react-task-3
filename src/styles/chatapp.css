@@ -1,0 +1,76 @@
+/* Container */
+.chat-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f4f6f8;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+h1{
+  color: rgb(52, 59, 57);
+}
+
+.chat-container label {
+  display: none; /* clean UI */
+}
+
+/* Input box */
+.chat-container input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Button */
+.chat-container button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chat-container button:hover {
+  background: #2980b9;
+}
+
+/* Message area */
+.chat-container > div:last-child {
+  max-height: 250px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Message bubble */
+.chat-container > div:last-child div {
+  background: #5682a1;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 7px;
+  width: fit-content;
+  max-width: 75%;
+  word-wrap: break-word;
+  margin-top: 10px;
+  margin-left: 35%;
+}
+
+/* Alternate style (optional - left/right effect) */
+/* .chat-container > div:last-child div:nth-child(even) {
+  align-self: flex-end;
+  background: #2ecc71;
+  margin-top: 10px;
+} */
+
+.message-display{
+  margin-top: 20px;
+}
